@@ -52,11 +52,13 @@ class Game {
       //  cars[index-1].change animation("blast")
 
 
-// criando um novo grupo
+// CRIE OS GRUPOS 
 
-    fuels = new Group(); // ? 
-    powerCoins = new Group();
-    obstacles = new Group();
+//fuels
+    // powerCoins
+         //  obstacles
+
+  
 
     var obstaclesPositions = [
       { x: width / 2 + 250, y: height - 800, image: obstacle2Image },
@@ -333,10 +335,9 @@ class Game {
 // Add A1  ==== AQUI
   handleFuel(index) {
 
-    cars[index - 1].overlap(fuels, function(collector, collected) {
-      player.fuel = 185;
-   
-      collected.remove();
+//     cars[index - 1].overlap(fuels, function(collector, collected) {
+//       player.fuel = 185;
+//          collected.remove();
     });
 
     // reduzindo o combustível do carro
